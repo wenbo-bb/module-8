@@ -1,136 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<title>Module 8 Spatial Visualisation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Module 8 Country Emissions Map</title>
 </head>
-
-
 <body>
 
+  <h1>Module 8 Country Emissions Map</h1>
+  <p>2 October 2026</p>
 
-<h1>Module 8 Spatial Visualisation</h1>
+  <p>This map compares greenhouse gas emissions per person in Brazil, China and India in 2024. Blue points show the three country locations, with a value next to each point.</p>
 
+  <p>Figure 1</p>
+  <h2>Greenhouse Gas Emissions per Person in Three Countries</h2>
 
-<p>2 October 2026</p>
+  <img src="module8_spatial.png"
+       alt="World map with blue points marking Brazil, China and India. Their 2024 emissions are 13.2, 9.9 and 2.9 tonnes of CO₂ equivalents per person, respectively."
+       style="max-width:100%;height:auto;">
 
+  <p>Emissions data from Jones et al. (2025) and Our World in Data (2025); map from Becker et al. (2025); point coordinates from Natural Earth (n.d.).</p>
 
-<p>
-This exercise presents greenhouse gas emissions data using a world map.
-</p>
+  <p>Brazil, in South America, has the highest rate among the three countries at 13.2 tonnes of CO₂ equivalents per person. China and India, in Asia, have rates of 9.9 and 2.9.</p>
 
+  <h2>Exercise summary</h2>
 
+  <p>I selected the emission data of Brazil, China and India in 2024 and added their national coordinate labels. In the R language, I drew a world map, marked with three blue dots, and marked the emission value of each country.</p>
 
-<h2>Data Card</h2>
+  <fieldset>
+    <legend>Data Visualisation Data Card</legend>
 
+    <h3>Title</h3>
+    <p>Emissions per person in 2024</p>
 
-<table border="1">
+    <h3>Summary</h3>
+    <p>Three labelled points compare emissions per person in Brazil, China and India in 2024. Brazil has the highest value at 13.2, followed by China at 9.9 and India at 2.9 tonnes of CO₂ equivalents per person.</p>
 
+    <h3>Data Sources</h3>
 
-<tr>
-<th>Item</th>
-<th>Description</th>
-</tr>
+    <p>Becker, R. A., Wilks, A. R., Brownrigg, R., Minka, T. P., &amp; Deckmyn, A. (2025). maps: Draw geographical maps (Version 3.4.3) [Computer software]. Comprehensive R Archive Network. https://CRAN.R-project.org/package=maps</p>
 
+    <p>Jones, M. W., Peters, G. P., Gasser, T., Andrew, R. M., Schwingshackl, C., Gütschow, J., Houghton, R. A., Friedlingstein, P., Pongratz, J., &amp; Le Quéré, C. (2025). National contributions to climate change due to historical emissions of carbon dioxide, methane and nitrous oxide (Version 2025.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.16640595</p>
 
-<tr>
-<td>Dataset</td>
-<td>Selected country emissions data</td>
-</tr>
+    <p>Natural Earth. (n.d.). Admin 0 – countries (1:110 million scale) [Data set]. From https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/</p>
 
+    <p>Our World in Data. (n.d.). Per capita greenhouse gas emissions [Interactive data visualization]. From https://ourworldindata.org/grapher/per-capita-ghg-emissions</p>
 
-<tr>
-<td>Source</td>
-<td>Our World in Data</td>
-</tr>
+    <p>Our World in Data. (2025). Per capita greenhouse gas emissions including land use [Data set]. From https://ourworldindata.org/grapher/per-capita-ghg-emissions</p>
 
+    <h3>Mapping</h3>
 
-<tr>
-<td>Year</td>
-<td>2024</td>
-</tr>
+    <p>Longitude and latitude are expressed in the decimal system. The basic map uses the map package point coordinates based on the national label location of Natural Earth.</p>
 
+    <p>All blue dots have the same size and color.</p>
 
-<tr>
-<td>Countries</td>
-<td>Brazil, China and India</td>
-</tr>
+    <p>The label shows the per capita emissions, calculated according to the 100-year warming scenario, rounded to one decimal place, and the unit is carbon dioxide equivalent tons. The year is fixed as 2024.</p>
 
+    <h3>Important Notes</h3>
 
-<tr>
-<td>Variable</td>
-<td>Greenhouse gas emissions per person</td>
-</tr>
+    <p>I included Brazil, China and India in 2024 and added label coordinates. These three records are complete and unique, so no values are filled in. Other countries are not included in this comparison.</p>
 
+    <p>Emissions include land use factors, which are estimates and uncertain.</p>
 
-<tr>
-<td>Visualisation</td>
-<td>World map</td>
-</tr>
+    <h3>Access</h3>
+    <p>4191929@student.rmit.edu.au</p>
+  </fieldset>
 
+  <h2>AI acknowledgement</h2>
 
-<tr>
-<td>Purpose</td>
-<td>Show geographic differences in emissions.</td>
-</tr>
+  <p>I used ChatGPT (OpenAI, 2026) to search for information and websites related to data visualisation. I also used ChatGPT (OpenAI, 2026) to identify vulnerabilities in my R code and revise it accordingly.</p>
 
+  <h2>References</h2>
 
-</table>
+  <p>Becker, R. A., Wilks, A. R., Brownrigg, R., Minka, T. P., &amp; Deckmyn, A. (2025). maps: Draw geographical maps (Version 3.4.3) [Computer software]. Comprehensive R Archive Network. https://CRAN.R-project.org/package=maps</p>
 
+  <p>Jones, M. W., Peters, G. P., Gasser, T., Andrew, R. M., Schwingshackl, C., Gütschow, J., Houghton, R. A., Friedlingstein, P., Pongratz, J., &amp; Le Quéré, C. (2025). National contributions to climate change due to historical emissions of carbon dioxide, methane and nitrous oxide (Version 2025.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.16640595</p>
 
+  <p>Natural Earth. (n.d.). Admin 0 – countries (1:110 million scale) [Data set]. From https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/</p>
 
-<h2>Map</h2>
+  <p>Our World in Data. (n.d.). Per capita greenhouse gas emissions [Interactive data visualization]. From https://ourworldindata.org/grapher/per-capita-ghg-emissions</p>
 
+  <p>Our World in Data. (2025). Per capita greenhouse gas emissions including land use [Data set]. From https://ourworldindata.org/grapher/per-capita-ghg-emissions</p>
 
-<img src="module8_spatial.png"
-alt="World map showing emissions per person"
-width="700">
-
-
-
-<h2>Summary</h2>
-
-
-<p>
-The map shows differences in greenhouse gas emissions
-per person between selected countries in 2024.
-</p>
-
-
-
-<h2>AI acknowledgement</h2>
-
-
-<p>
-I used ChatGPT (OpenAI, 2026) to support source searching
-and review my R code for possible errors before making revisions.
-</p>
-
-
-
-<h2>References</h2>
-
-
-<p>
-Our World in Data.
-<i>Per capita greenhouse gas emissions.</i>
-<br>
-https://ourworldindata.org/
-</p>
-
-
-
-<p>
-OpenAI. (2026).
-<i>ChatGPT</i> [Large language model].
-Accessed 2 October 2026.
-<br>
-https://chatgpt.com/share/6abed80e-7edc-83ec-b871-98e5e4b42dde
-</p>
-
-
+  <p>OpenAI (2026) <em>ChatGPT</em> [Large language model], accessed 1 October 2026.
+    <a href="https://chatgpt.com/share/6abed80e-7edc-83ec-b871-98e5e4b42dde">https://chatgpt.com/share/6abed80e-7edc-83ec-b871-98e5e4b42dde</a>
+  </p>
 
 </body>
-
 </html>
